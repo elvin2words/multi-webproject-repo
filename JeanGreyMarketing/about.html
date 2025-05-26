@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!--head section-->
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Nunito%3Aregular%7CNunito%3A300%2C400%2C600%2C700%2C900%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A300%2C700%2C900%2C600%2C400%7CLato%3A400&amp;display=swap">
+</head>
+
+<body>
+  <div class="d-none d-lg-block">
+    <header class="header-main sticky_header header" id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-6">
+            <div class="xs-logo-wrapper">
+              <a href="#" class="xs-logo">
+                <img src="images/QBT Logo.png" class="logo-light" alt="Seocify" draggable="false">
+                <img src="images/QBT Logo Black.png" alt="Seocify" class="logo-dark" draggable="false">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-6">
+            <nav class="menus d-flex justify-content-center align-items-center h-100">
+              <div class="nav-header">
+
+                <div class="nav-toggle" style="font-size:30px;cursor:pointer"><i class="fa fa-bars"
+                    style="font-size: 30px;"></i></div>
+              </div>
+
+              <ul class="align_right menu" id="sidenav-desktop">
+                <li class="menu-item closeicon" id="close_icon-desktop"> <a href="javascript:void(0)"
+                    class="closebtn"><i class="fa fa-times" style="font-size: 30px;"></i></a></li>
+                <li class="menu-item menu-item-type"><a title="Home" href="index.html">Home</a></li>
+
+                <li class="menu-item menu-item-type"><a title="About" href="about.html" class="sub-menu-link">About</a>
+                </li>
+                <!-- <li class="menu-item menu-item-type"><a title="Blog" href="#" class="sub-menu-link">Blog<span
+                    class="submenu-indicator"><i class="fa fa-angle-down"></i></span></a>
+                <ul class="nav-dropdown nav-submenu nav-show">
+                  <li class="sub-menu-item "><a title="Blog" href="https://wp.xpeedstudio.com/seocify/blog/">Blog</a>
+                  </li>
+                  <li class="sub-menu-item "><a title="Blog Single" href="#">Blog Single</a></li>
+                </ul>
+              </li> -->
+                <li class="menu-item menu-item-type"><a title="Portfilio" href="portfolio.html"
+                    class="sub-menu-link">Portfolio</a></li>
+                <li class="menu-item menu-item-type"><a title="Services" href="services.html"
+                    class="sub-menu-link">Services</a></li>
+                <li class="menu-item contact menu-item-type"><a title="Contact Us" href="contact.html">Contact
+                    Us</a></li>
+
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-6 col-lg-2">
+
+            <ul class="menu-tools">
+
+              <!-- <li>
+              <a href="#modal-popup-wpml" class="languageSwitcher-button xs-modal-popup">
+                <span class="flag"
+                  style="background-image: url(https://wp.xpeedstudio.com/seocify/wp-content/themes/seocify/assets/images/united-states.svg)"></span>
+                <span class="lang-title text-uppercase">en</span>
+              </a>
+            </li> -->
+              <li>
+                <a class="navsearch-button xs-modal-popup" id="search"> <i class="fa fa-search"
+                    style="font-size: 22px;"></i></a>
+                <!--   <button type="button" id="search" class="btn btn-primary">
+        Launch demo modal
+    </button> -->
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- search pop up -->
+    <div class="modal-bg none" id="menu_ani"></div>
+    <div class="modal fade" id="popup_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <button type="button" class="close_search" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-searchPanel" id="search-popup">
+        <!--dialog -->
+        <div class="empty-container">
+          <div class="modal-dialog modal-lg">
+            <!--start -->
+
+
+            <div class="modal-content">
+
+              <div class="xs-search-panel">
+                <form action="#" class="xs-serach" method="get">
+                  <div class="input-group">
+                    <input type="search" name="s" placeholder="Search Here...">
+                    <button class="search-btn"><i class="fa fa-search" style="font-size: 20px;"></i></button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+            <!--modal content -->
+          </div>
+          <!-- dialog -->
+        </div>
+        <!-- modal -->
+      </div>
+    </div>
+
+    <!--header end-->
+  </div>
+  <div class="d-lg-none position-relative">
+    <header class="header-main sticky_header header" id="header-mobile">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-6">
+            <div class="xs-logo-wrapper">
+              <a href="#" class="xs-logo">
+                <img src="images/QBT Logo.png" class="logo-light" alt="Seocify" draggable="false">
+                <img src="images/QBT Logo Black.png" alt="Seocify" class="logo-dark" draggable="false">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-6">
+            <nav class="menus d-flex justify-content-center align-items-center h-100">
+              <div class="nav-header">
+
+                <div class="nav-toggle" style="font-size:30px;cursor:pointer" onclick="open_nav()"><i class="fa fa-bars"
+                    style="font-size: 30px;"></i></div>
+              </div>
+
+              <ul class="align_right menu" id="sidenav-mobile">
+                <li class="menu-item closeicon" id="close_icon"> <a href="javascript:void(0)"
+                    class="closebtn mobile-nav" onclick="close_nav()"><i class="fa fa-times"
+                      style="font-size: 30px;"></i></a></li>
+                <li class="menu-item menu-item-type"><a title="Home" href="index.html" class="mobile-nav">Home</a></li>
+
+                <li class="menu-item menu-item-type"><a title="About" href="about.html"
+                    class="sub-menu-link mobile-nav">About</a></li>
+                <!-- <li class="menu-item menu-item-type"><a title="Blog" href="#" class="sub-menu-link">Blog<span
+                    class="submenu-indicator"><i class="fa fa-angle-down"></i></span></a>
+                <ul class="nav-dropdown nav-submenu nav-show">
+                  <li class="sub-menu-item "><a title="Blog" href="https://wp.xpeedstudio.com/seocify/blog/">Blog</a>
+                  </li>
+                  <li class="sub-menu-item "><a title="Blog Single" href="#">Blog Single</a></li>
+                </ul>
+              </li> -->
+                <li class="menu-item menu-item-type"><a title="Portfilio" href="portfolio.html"
+                    class="sub-menu-link mobile-nav">Portfolio</a></li>
+                <li class="menu-item menu-item-type"><a title="Services" href="services.html"
+                    class="sub-menu-link mobile-nav">Services</a></li>
+                <li class="menu-item contact menu-item-type"><a title="Contact Us" href="contact.html"
+                    class="mobile-nav">Contact
+                    Us</a></li>
+
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-6 col-lg-2">
+
+            <ul class="menu-tools">
+
+              <!-- <li>
+              <a href="#modal-popup-wpml" class="languageSwitcher-button xs-modal-popup">
+                <span class="flag"
+                  style="background-image: url(https://wp.xpeedstudio.com/seocify/wp-content/themes/seocify/assets/images/united-states.svg)"></span>
+                <span class="lang-title text-uppercase">en</span>
+              </a>
+            </li> -->
+              <li>
+                <a class="navsearch-button xs-modal-popup mobile-nav" href="#search"> <i class="fa fa-search"
+                    style="font-size: 22px;"></i></a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--header end-->
+  </div>
+  <!--banner section-->
+
+  <section class="inner-banner-area">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="inner-banner-content">
+            <h1 class="inner-banner-title">
+              About </h1>
+            <ul class="breadcumbs list-inline">
+              <li><a href="https://wp.xpeedstudio.com/seocify">Home</a> / About</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-image" style="background-image: url(images/background-1.jpg)"></div>
+  </section>
+  <!-- next section -->
+  <!--next section-->
+  <div class="elementor1">
+
+    <div class="elementor-container">
+      <div class="elementor-row d-flex flex-row flex-wrap">
+
+        <div class="elementor-column">
+          <div class="p2 elementor-widget-wrapped">
+
+            <div class="xs-heading xs-chg text-left">
+              <h2 class="section-title">We provide <br> best SEO service</h2>
+              <span class="line"></span>
+            </div>
+            <div class="elementor-text-editor fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+              blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+              ocean.</div>
+
+            <div class="elementor-text-editor fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+              A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+              paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful
+              Pointing has no control about the blind texts it is an almost unorthographic life One day however</div>
+          </div>
+        </div>
+
+        <div class="elementor-column">
+          <div class="p1">
+            <div class="content-wrap">
+              <img width="490" height="535" src="images/info-1.png" class="attachment-large size-large" alt=""
+                srcset="https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/08/info-1.png 490w, https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/08/info-1-275x300.png 275w"
+                sizes="(max-width: 490px) 100vw, 490px" draggable="false">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--next section end-->
+  <div class="container-fluid work-flow text-center">
+    <div class="work-heading pt-3 mb-3">
+      <h3 class="mb-3 pt-5">Work Flow</h3>
+      <h2 class="mb-5">Our Working Process</h2>
+    </div>
+    <div class="work-items-container row d-flex flex-row flex-wrap w-75 mx-auto">
+
+      <div class="work-item col-lg-3 col-md-6">
+        <div class="work-item-image">
+          <img src="images/1.png">
+        </div>
+        <h5>Planning</h5>
+      </div>
+      <div class="work-item col-lg-3 col-md-6">
+        <div class="work-item-image">
+          <img src="images/2.png">
+        </div>
+        <h5>Research</h5>
+      </div>
+      <div class="work-item col-lg-3 col-md-6">
+        <div class="work-item-image">
+          <img src="images/3.png">
+        </div>
+        <h5>Optimizing</h5>
+      </div>
+      <div class="work-item col-lg-3 col-md-6">
+        <div class="work-item-image">
+          <img src="images/4.png">
+        </div>
+        <h5>Results</h5>
+      </div>
+
+    </div>
+  </div>
+  <!--next section end -->
+  <section class="elementor2" data-element_type="section">
+    <div class="elementor-container">
+      <div class="elementor-row d-flex flex-row flex-wrap">
+        <div class="elementor-col-18">
+          <div class="elementor-widget-wrapped">
+          </div>
+        </div>
+
+
+        <div class="elementor-b">
+          <div class="elementor-column2">
+            <div class="elementor-widget-wrapped">
+              <div class="xs-heading text-center" style="padding: 0 0 55px 0;">
+                <h2 class="section-title"><span>Google</span> only loves you <br> when everyone else <span>love</span>
+                  you
+                  first</h2>
+                <span class="line text-center"></span>
+              </div>
+              <div class="elementor-widget">
+                <div class="row funfact-wraper no-gutters">
+                  <div class="col-md-4">
+                    <div class="single-funfact wow text-center">
+
+                      <span class="number-percentage-count " id="count1" data-value="3000"
+                        data-animation-duration="4000">3000</span>
+                      <p>Happy Clients</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="single-funfact wow text-center" data-wow-duration="1s">
+                      <span class="number-percentage-count number-percentage" data-value="4000" id="count2"
+                        data-animation-duration="4000">4000</span>
+                      <span>+</span>
+                      <p>Works Done</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="single-funfact wow text-center">
+                      <span class="number-percentage-count number-percentag" data-value="2000" id="count3"
+                        data-animation-duration="4000">2000</span>
+                      <p>Subscribers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elementor-widget-wrapped element-center-mobile">
+                <a href="#" target="_self" class="xs-btn btn btn-primary">
+                  <span><i class="icon icon-envelope2" aria-hidden="true"></i></span>
+                  <span class="xs-button-text"> Click here to get Subscribe </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="elementor-col-18">
+          <div class="elementor-widget-wrapped">
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+  <!--next section end -->
+  <div class="elementor3">
+
+    <div class="elementor-container">
+      <div class="elementor-row d-flex flex-row flex-wrap">
+
+        <div class="elementor-column3">
+          <div class="p2 elementor-widget-wrapped">
+
+            <div class="xs-heading text-left">
+              <h2 class="section-title">Our Vision</h2>
+              <span class="line"></span>
+            </div>
+            <div class="elementor-text-editor fadeInUp animated">Far far away, behind the word mountains, far from the
+              countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
+              at the coast of the Semantics, a large language ocean.</div>
+            <div class="elementor-wid fadeInUp animated">
+              <ul class="elementor-icon-list-items">
+                <li class="elementor-icon-list-item">
+                  <span class="elementor-icon-list-icon">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                  </span>
+                  <span class="elementor-icon-list-text">Separated they live in Bookmarksgrove</span>
+                </li>
+                <li class="elementor-icon-list-item">
+                  <span class="elementor-icon-list-icon">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                  </span>
+                  <span class="elementor-icon-list-text">Right at the coast of</span>
+                </li>
+                <li class="elementor-icon-list-item">
+                  <span class="elementor-icon-list-icon">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                  </span>
+                  <span class="elementor-icon-list-text">The Semantics</span>
+                </li>
+                <li class="elementor-icon-list-item">
+                  <span class="elementor-icon-list-icon">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                  </span>
+                  <span class="elementor-icon-list-text">A large language ocean.</span>
+                </li>
+              </ul>
+
+            </div>
+            <div class="element-center-mobile fadeInUp animated">
+              <a href="#" target="_self" class="xs-btn btn btn-primary">
+                <span class="xs-button-text">Get Our Service</span>
+                <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="elementor-column3">
+
+          <div class="content-wrap p1">
+            <div class="elementor-image">
+              <img width="521" height="436" src="images/info-2.png" class="attachment-large size-large" alt=""
+                srcset="https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/09/info-2.png 521w, https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/09/info-2-300x251.png 300w"
+                sizes="(max-width: 521px) 100vw, 521px" draggable="false"> </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- next section -->
+  <div class="elementor4">
+    <div class="elementor-container">
+      <div class="elementor-row d-flex">
+        <div class="elementor-column-wrap">
+
+          <div class="xs-heading text-center">
+            <h3 class="section-subtitle">Interested!</h3>
+            <h2 class="section-title">Meet Our Team</h2>
+            <span class="line"></span>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </div>
+  <section class="elementor-element4" data-id="bf2bcf3" data-element_type="section">
+    <div class="elementor-container ">
+      <div class="elementor-row d-flex flex-row flex-wrap">
+        <div class="elementor-col-25 ">
+          <div class="elementor-column4">
+
+            <div class="elementor-widget-wrapped">
+              <div class="single-box text-center" id="mem0">
+                <div class="image">
+                  <img width="258" height="259" src="images/team-5.jpg" class="attachment-full size-full" alt=""
+                    srcset="https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/08/team-5.jpg 258w, https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/08/team-5-150x150.jpg 150w"
+                    sizes="(max-width: 258px) 100vw, 258px" draggable="false">
+                  <div class="hover-area" id="teamem0">
+                    <h2 class="title"><a href="" target="_blank" rel="nofollow">Grace Charlotte</a></h2>
+                    <p class="description">SEO Expert</p>
+                    <span class="line"></span>
+                    <ul class="xs-list list-inline">
+
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="box-footer">
+                  <h2 class="title"><a href="" target="_blank" rel="nofollow">Grace Charlotte</a></h2>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="elementor-col-25 ">
+          <div class="elementor-column4">
+
+            <div class="elementor-widget-wrapped">
+              <div class="single-box text-center" id="mem1">
+                <div class="image">
+                  <img width="258" height="259" src="images/team-7.jpg" class="attachment-full size-full" alt=""
+                    srcset="https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/08/team-7.jpg 258w, https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/08/team-7-150x150.jpg 150w"
+                    sizes="(max-width: 258px) 100vw, 258px" draggable="false">
+                  <div class="hover-area" id="teamem1">
+                    <h2 class="title"><a href="" target="_blank" rel="nofollow">Aaron Brayden</a></h2>
+                    <p class="description">Marketing Expert</p>
+                    <span class="line"></span>
+                    <ul class="xs-list list-inline">
+
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="box-footer">
+                  <h2 class="title"><a href="" target="_blank" rel="nofollow">Aaron Brayden</a></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="elementor-col-25 ">
+          <div class="elementor-column4">
+
+            <div class="elementor-widget-wrapped">
+              <div class="single-box text-center" id="mem2">
+                <div class="image">
+                  <img width="258" height="259" src="images/team-6.jpg" class="attachment-full size-full" alt=""
+                    srcset="https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/08/team-6.jpg 258w, https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/08/team-6-150x150.jpg 150w"
+                    sizes="(max-width: 258px) 100vw, 258px" draggable="false">
+                  <div class="hover-area" id="teamem2">
+                    <h2 class="title"><a href="" target="_blank" rel="nofollow">Thomas Henry</a></h2>
+                    <p class="description">Graphic Designer</p>
+                    <span class="line"></span>
+                    <ul class="xs-list list-inline">
+
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="box-footer">
+                  <h2 class="title"><a href="" target="_blank" rel="nofollow">Thomas Henry</a></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="elementor-col-25 ">
+          <div class="elementor-column4">
+
+            <div class="elementor-widget-wrapped">
+              <div class="single-box text-center" id="mem3">
+                <div class="image">
+                  <img width="258" height="259" src="images/team-5.jpg" class="attachment-full size-full" alt=""
+                    srcset="https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/08/team-5.jpg 258w, https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/08/team-5-150x150.jpg 150w"
+                    sizes="(max-width: 258px) 100vw, 258px" draggable="false">
+                  <div class="hover-area" id="teamem3">
+                    <h2 class="title"><a href="" target="_blank" rel="nofollow">Grace Charlotte</a></h2>
+                    <p class="description">SEO Expert</p>
+                    <span class="line"></span>
+                    <ul class="xs-list list-inline">
+
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="box-footer">
+                  <h2 class="title"><a href="" target="_blank" rel="nofollow">Grace Charlotte</a></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="element4">
+      <div class="elementor-container">
+        <div class="elementor-row d-flex flex-row flex-wrap">
+          <div class="elementor-d">
+            <div class="elementor-column4">
+
+              <div class="elementor-widget-wrapped" style="text-align: right;">
+                <div class="elementor-image">
+                  <img width="344" height="344" src="images/info-3.jpg" class="attachment-large size-large" alt=""
+                    srcset="https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/09/info-3.jpg 344w, https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/09/info-3-150x150.jpg 150w, https://wp.xpeedstudio.com/seocify/wp-content/uploads/2018/09/info-3-300x300.jpg 300w"
+                    sizes="(max-width: 344px) 100vw, 344px" draggable="false"> </div>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-1">
+            <div class="elementor-column4">
+
+              <div class="elementor-widget-wrapped">
+                <div class="elementor-widget-container">
+                  <div class="xs-heading text-left">
+                    <h3 class="section-subtitle">We’re Hiring!</h3>
+                    <h2 class="section-title">Interested to working with our Team?</h2>
+                  </div>
+                </div>
+                <div class="elementor-widget-wrapped element-center-mobile">
+                  <a href="https://wp.xpeedstudio.com/seocify/contact/" target="_self" class="xs-btn btn btn-primary">
+                    <span><i class="icon icon-envelope2" aria-hidden="true"></i></span>
+                    <span class="xs-button-text"> Drop you resume here</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer id="footer-section">
+    <div class="container">
+      <div class="footer-top-area">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="footer-logo">
+              <a href="https://wp.xpeedstudio.com/seocify/"><img src="images/QBT Logo.png" alt="footer logo"
+                  draggable="false"></a>
+            </div>
+          </div>
+          <div class="col-md-8 col-12">
+            <ul class="address-list list-inline">
+              <li>
+                <div class="address-icon">
+                  <img src="images/pin.png" alt="footer logo" draggable="false">
+                </div>
+                <div class="address-info addr"><a href="">1010 Grand Avenue <br> New York, USA</a></div>
+              </li>
+              <li>
+                <div class="address-icon">
+                  <img src="images/massage.png" alt="footer logo" draggable="false">
+                </div>
+                <div class="address-info"><a class="phn" href="tel:009-215-5596">009-215-5596</a> <br> <a class="email"
+                    href="mailto:info@example.com">info@example.com</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h4 class="content-title">Our Company</h4>
+              <div class="menu-company-container">
+                <ul id="menu-company" class="menu">
+                  <li class="menu-item menu-item-type-custom menu-item-object-page menu-item-3095">
+                    <a href="https://wp.xpeedstudio.com/seocify/about/" class="icon"> About Us</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-page menu-item-699"><a
+                      href="#">Contact</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-page menu-item-696"><a
+                      href="#">Support</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-page menu-item-694"><a href="#">Latest
+                      Blog</a></li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-page menu-item-695"><a
+                      href="#">Pricing</a></li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h4 class="content-title">Our Services</h4>
+              <div class="menu-services-container">
+                <ul id="menu-services" class="menu">
+                  <li id="menu-item-3066"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3066"><a
+                      href="https://wp.xpeedstudio.com/seocify/home-seven/email-marketing/">Email Marketing</a></li>
+                  <li id="menu-item-3067"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3067"><a
+                      href="https://wp.xpeedstudio.com/seocify/home-seven/offline-seo/">Offline SEO</a></li>
+                  <li id="menu-item-3068"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3068"><a
+                      href="https://wp.xpeedstudio.com/seocify/home-seven/lead-generation/">Lead Generation</a></li>
+                  <li id="menu-item-3070"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3070"><a
+                      href="https://wp.xpeedstudio.com/seocify/home-seven/growth-hacking/">Growth Hacking</a></li>
+                  <li id="menu-item-2496"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2496"><a
+                      href="https://wp.xpeedstudio.com/seocify/social-media-marketing/">Social Media Marketing</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget widget_entries">
+              <h4 class="content-title">Recent Articles</h4>
+              <ul>
+                <li>
+                  <a href="https://wp.xpeedstudio.com/seocify/best-and-fastest-data-server/">Twice profit than before
+                    you ever got in business</a>
+                  <span class="post-date">July 19, 2018</span>
+                </li>
+                <li>
+                  <a href="https://wp.xpeedstudio.com/seocify/cloud-hosting-growing-faster-todays/">Cloud Hosting
+                    growing faster ever got in business</a>
+                  <span class="post-date">July 19, 2018</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h4 class="content-title">About Us</h4>
+              <div class="textwidget">
+                <form action="" method="post" class="wpcf7-form">
+
+                  <div class="contact-form"><span class="your-email form-control-wrap"><input type="email"
+                        name="your-email" value="" size="40" class="form-control" aria-required="true"
+                        aria-invalid="false" placeholder="Email"></span><span class="form-control-wrap"><textarea
+                        name="your-message" cols="40" rows="10" class="form-control" aria-invalid="false"
+                        placeholder="Message"></textarea></span><input type="submit" value="Submit now"
+                      class="submit-btn">
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+    <div class="partners">
+      <div class="container">
+        <div class="area">
+          <div class="row">
+            <div class="col-lg-8">
+              <ul class="xs-lsit list-inline text-lg-left text-md-center">
+                <li><a href=""><img src="images/partner-2.png" alt="" draggable="false"></a></li>
+                <li><a href=""><img src="images/partner-1.png" alt="" draggable="false"></a></li>
+                <li><a href=""><img src="images/partner-3.png" alt="" draggable="false"></a></li>
+                <li><a href=""><img src="images/partner-4.png" alt="" draggable="false"></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <ul class="xs-list list-inline text-lg-right text-md-center">
+                <li><img src="images/american-express.png" alt="" draggable="false"></li>
+                <li><img src="images/visa.png" alt="" draggable="false"></li>
+                <li><img src="images/discover.png" alt="" draggable="false"></li>
+                <li><img src="images/master-card.png" alt="" draggable="false"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="copyright-text">
+              <p>Copyrights By Xpeedstudio - 2018. All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <ul class="social-list">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!--internal script-->
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript">
+
+    // counter script    
+    function counter(id, start, end, duration) {
+      let obj = document.getElementById(id),
+        current = start,
+        range = end - start,
+        increment = end > start ? 1 : -1,
+        step = Math.abs(Math.floor(duration / range)),
+        timer = setInterval(() => {
+          current += increment;
+          obj.textContent = current;
+          if (current == end) {
+            clearInterval(timer);
+          }
+        }, step);
+    }
+    counter("count1", 0, 3000, 1000);
+    counter("count2", 0, 4000, 1000);
+    counter("count3", 0, 2000, 1000);
+
+    // hover-area show 
+    $(".single-box").on("mouseenter", function () {
+      $(".hover-area").filter('#tea' + this.id).addClass("activate");
+      console.log(this.id);
+    }).on("mouseleave", function () {
+      $('.hover-area').filter('#tea' + this.id).removeClass("activate");
+    });
+
+
+
+
+
+
+  </script>
+  <!--internal script end-->
+  <!--script end-->
+</body>
+<!--body end-->
+
+</html>
