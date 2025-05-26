@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="xxxxx">
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="styles.css">
+
+        <title></title>
+    </head>
+    <body>
+        <!-- Start Navbar -->
+        <nav>
+            <div class="container">
+                <div id="logo">
+                    <img class="logoimg" src="img/logo.png">
+                </div>
+
+                <input class="side-menu" type="checkbox" id="side-menu">
+                <label for="side-menu" class="hamb">
+                    <span class="hamb-line"></span>
+                </label>
+
+                <div class="navLinks">
+                    <a href="index.html" target="">Home</a>
+                    <!-- <a href="buy.html" target="">Buy A Car</a> -->
+                    <a href="#" target="">Buy A Car</a>
+                    <a href="sell.html" class="active" target="">Sell A Car</a>
+                    <a href="https://autocash.whkauto.com/" target="_blank">Value A Car</a>
+                    <a href="contact.html" target="">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+ 
+        <body>
+            <div class="sellus-container">
+                <!-- sell-wrapper -->
+                <div class="sell-wrapper margin-top-80">
+                    <div class="sell-inner">
+                        <div class="sell-video">
+                            <iframe class="video" src="https://www.youtube.com/embed/ngjdmMKdo0?playlist=sjdhjeje&loop=1&autoplay=1&mute=1" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.944461186776" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+
+                        </div>
+
+                        <div class="sell-content">
+                            <hr>
+
+                            <div class="title-section">
+                                <!-- <span class="title-label">Get a FREE Offer for your car!</span> -->
+                                <h1>Get a FREE Offer for your car!</h1>
+                                <br>
+                                <h2 class="title">How would you like to proceed?</h2>
+                            </div>
+
+                            <div class="box">
+                                <a class="button_sell" href="https://autocash.whkauto.com/" target="_blank">Urgently Need Cash</a>
+                            </div>
+
+                            <div class="box">
+                                <a class="button_sell" href="#bookingform">Ready to wait</a>
+                            </div>
+                            
+                            <div id="bookingform" class="overlay">
+                                <div class="popup">
+                                    <h2>Booking Form</h2>
+                                    <a class="close" href="#">&times;</a>
+                                    <div class="content">
+                                        <form method="post" action="sell.php">
+                                            <div class="row">
+           
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <!-- <label class="label-control">Full Name</label> -->
+                                                        <input type="text" name="senderName" placeholder="Full Name" class="form-control" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="form-group">
+                                                            <!-- <label class="label-control">Phone Number</label> -->
+                                                            <input type="text" placeholder="Phone Number" name="phone" class="form-control" required>
+                                                            <!-- <input type="phone" placeholder="Phone Number" name="phone" class="form-control" required> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <!-- <label class="label-control">Make</label> -->
+                                                        <input type="text" name="Make" placeholder="Car Make" class="form-control" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="form-group">
+                                                            <!-- <label class="label-control">Model</label> -->
+                                                            <input type="text" placeholder="Model" name="model" class="form-control" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <!-- <label class="label-control">Year</label> -->
+                                                        <input type="text" name="year" placeholder="Year Released" class="form-control" required>
+                                                        <!-- <input type="date" name="year" placeholder="Year Released" class="form-control" required> -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="form-group">
+                                                            <!-- <label class="label-control">Engine No.</label> -->
+                                                            <input type="text" placeholder="Engine Number" name="enginenum" class="form-control" required>
+                                                            <!-- <input type="number" placeholder="Engine Number" name="enginenum" class="form-control" required> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <!-- <label class="label-control">Town</label> -->
+                                                        <input type="text" name="town" placeholder="Town" class="form-control" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="form-group">
+                                                            <!-- <label class="label-control">VIN</label> -->
+                                                            <input type="text" placeholder="Vehicle Inspection Number" name="vin" class="form-control" required>
+                                                            <!-- <input type="number" placeholder="Vehicle Inspection Number" name="vin" class="form-control" required> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="form-group">
+                                                            <label class="label-control">Registered Owner</label>
+                                                            <input type="radio" id="regowneryes" name="regowner" value="yes">
+                                                            <label for="regowneryes">Yes</label>
+                                                            <input type="radio" id="regownerno" name="regowner" value="no">
+                                                            <label for="regownerno">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="label-control">MaintenancePlan Valid</label>
+                                                        <input type="radio" id="planvalidyes" name="planvalid" value="yes">
+                                                        <label for="planvalidyes">Yes</label>
+                                                        <input type="radio" id="planvalidno" name="planvalid" value="no">
+                                                        <label for="planvalidno">No</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="label-control">Fully paid with the bank</label>
+                                                        <input type="radio" id="bankclearedyes" name="bankcleared" value="yes">
+                                                        <label for="bankclearedyes">Yes</label>
+                                                        <input type="radio" id="bankclearedno" name="bankcleared" value="no">
+                                                        <label for="bankclearedno">No</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <!-- <label class="label-control">Vehicle Description</label> -->
+                                                        <textarea class="form-control" name="description" placeholder="Vehicle Description" rows="2" required></textarea>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="col-12">
+                                                    <input type="submit" name="submit" class="button button-primary margin-right-15">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <hr>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </body>
+
+        <!-- Start Footer -->
+        <section class="footer">
+            <p class="copyright" style="color: black; background-color: rgb(253,206,11);">
+                Copyright @ Windhoek AutoDeals 2022. All Rights Reserved</span>
+            </p>
+        </section>
+    </body>
+</html>
+

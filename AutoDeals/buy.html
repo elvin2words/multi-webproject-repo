@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="xxxxx">
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="all.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="stylesheet" href="css/owl.theme.default.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <title></title>
+    </head>
+    
+    <body>
+        <!-- Start Navbar -->
+        <nav style="position:relative;">
+            <div class="container">
+                <div class="logo">
+                    <img class="logoimg" src="img/logo.png">
+                </div>
+
+                <input class="side-menu" type="checkbox" id="side-menu">
+                <label for="side-menu" class="hamb">
+                    <span class="hamb-line"></span>
+                </label>
+
+                <div class="navLinks">
+                    <a href="index.html" target="#">Home</a>
+                    <a href="buy.html" class="active" target="">Buy A Car</a>
+                    <a href="sell.html" target="">Sell A Car</a>
+                    <a href="https://autocash.whkauto.com/" target="_blank">Value A Car</a>
+                    <a href="contact.html" target="">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+        <body> 
+
+            <!-- <div class="container" >
+                <div id="myform" style="background-image:radial-gradient(rgba(128, 128, 128, 0.781), rgba(202, 202, 202, 0.493), rgba(97, 100, 100, 0.726), rgba(126, 123, 123, 0.548)); border-radius: 20%; width: 100%;">
+                    <form method="post" detail="search.php" style="text-align: center;">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="search" style="text-align:center; font-size: 26px; font-family: 'Times New Roman', Times, serif; padding-bottom:0%; margin-bottom: 0; margin-top: 0;">Search Car Details</label>
+                            </div>
+                            <div class="col-55">
+                                <input type="search" id="search" name="search" style="box-shadow: 5px 5px 15px grey; border-radius:50px; padding: 5px; width: 300px; margin-bottom: 10px;">
+                            </div>
+                            <input type="submit" name="submit" value="Search" style="width: 200px; margin-left:41%;; font-size:20px; border: 5px 5px 10px cyan ; margin-bottom: 0.5%;">
+                            <input type="submit" value="Search" class="btn2" style="width: 200px; margin-left:41%;; font-size:20px; border: 5px 5px 10px cyan ; margin-bottom: 0.5%;">
+                        </div>
+                    </form>        
+                </div>
+            </div> -->
+
+            <!-- <section class="extra">
+                <div class="row">
+                    <div class="column">
+                        <div class="mycard" >
+                            <div style="position: relative; margin:3%">
+
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column">
+                        <div class="mycard" >
+                            <div style="position: relative; margin:3%">
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="mycard" >
+                            <div style="position: relative; margin:3%">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <div class="headwrapper" style="margin-top:0.5%">
+                <div class="division" style="width: 30%;">
+                    <div id="myform" >
+                        <form method="post" detail="search.php" style="text-align: center;visibility: hidden;">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="search" style="text-align:center; font-size: 26px; font-family: 'Times New Roman', Times, serif; padding-bottom:0%; margin-bottom: 0; margin-top: 0;">Search Car Details</label>
+                                </div>
+                                <div class="col-55">
+                                    <input type="search" id="search" name="search" style="box-shadow: 5px 5px 15px grey; border-radius:50px; padding: 5px; width: 300px; margin-bottom: 10px;">
+                                </div>
+                                <input type="submit" name="submit" value="Search" >
+                            </div>
+                        </form>        
+                    </div>
+                </div>
+                
+                <div class="division" style="width: 30%;">
+                    <div id="myform">
+                        <form method="post" detail="search.php" style="text-align: center;">
+                            <div class="row">
+                                <div class="col-25">
+                                    <select class="ui dropdown" style="margin-top: 10%;">
+                                        <option value="" >Select a dealership</option>
+                                        <option value="1">Male</option>
+                                        <option value="0">Female</option>
+                                    </select>
+                                </div>
+                                <div class="col-55">
+                                    <h4>983 vehicles for sale</h4>
+                                </div>
+                            </div>
+                        </form>        
+                    </div>
+                </div>
+
+                <div class="division" style="width: 30%;">
+                    <div id="myform">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="search" >Search Car Details</label>
+                            </div>
+                            <div class="col-55">
+                                <input type="search" id="search" name="search" placeholder="Search">
+                            </div>
+                            <!-- <input type="submit" name="submit" value="Search" > -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="wrapper">
+
+                <div class="division" style="width: 20%;">
+
+                    <div class="first-col" style="margin-top: 3%;">
+                        <div class="menu-item" style="margin-bottom: 7%;">
+                            <div class="upper">
+                                <h6>Search Filters</h6>
+                            </div>
+                        </div> 
+
+                        <form method="post" detail="search.php" style="text-align: center; ">
+                            <div class="row">
+                                <!-- Filter BY parameters and sort by -->
+                                <div class="row">
+                                    <select class="ui dropdown">
+                                        <option value="">Any Body Type</option>
+                                        <option value="1">Male</option>
+                                        <option value="0">Female</option>
+                                    </select>
+            
+                                    <select class="ui dropdown">
+                                          <option value="">Any Min Price</option>
+                                          <option value="1">Male</option>
+                                          <option value="0">Female</option>
+                                    </select>
+                                    
+                                    <select class="ui dropdown">
+                                        <option value="">Any Make</option>
+                                        <option value="1">Male</option>
+                                        <option value="0">Female</option>
+                                    </select>
+                                    
+                                    <select class="ui dropdown">
+                                        <option value="">Any type of fuel</option>
+                                        <option value="1">Male</option>
+                                        <option value="0">Female</option>
+                                    </select>
+                                    
+                                    <select class="ui dropdown">
+                                        <option value="">Any Transmission</option>
+                                        <option value="1">Male</option>
+                                        <option value="0">Female</option>
+                                    </select>
+                                    
+                                    <select class="ui dropdown">
+                                        <option value="">Any Year</option>
+                                        <option value="1">Male</option>
+                                        <option value="0">Female</option>
+                                    </select>
+                                    
+                                    <input type="text" placeholder="keywords ...">
+                                    <select multiple="multiple" id="manyoptions">
+                                        <optgroup label="Cars Interested">
+                                            <option value="gender">Gender</option>
+                                            <option value="male">Male</option>
+                                            <option >Female</option>
+                                        </optgroup>
+                                    </select>
+                                    
+                                    <!-- <div class="col-25">
+                                        <label for="search" >Search Car Details</label>
+                                    </div>
+                                    <div class="col-55">
+                                        <input type="search" id="search" name="search">
+                                    </div> -->
+
+                                    <input type="submit" name="submit" value="Search">
+                                    <input type="reset" name="submit" value="Reset" >
+
+                                    <div class="menu-item">
+                                        <div class="item-row">
+                                            <!-- <h4>Toyota (5) </h4> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="row">
+                                <div class="col-25">
+                                    <label for="search" >Search Car Details</label>
+                                </div>
+                                <div class="col-55">
+                                    <input type="search" id="search" name="search">
+                                </div>
+                                <input type="submit" name="submit" value="Search" >
+                            </div> -->
+                        </form>
+                    </div>
+
+                    <div class="second-col">
+                        <div class="menu-item">
+                            <div class="upper">
+                                <h6>What are you looking for</h6>
+                                2 column table of all the vehicles on sale, registered in the system
+                                and theri numbers, which are also filter buttons for vehicles types, cheap used cars, 
+                                parts and accessories
+                            </div>
+                        </div> 
+                        <div class="menu-item">
+                            <div class="item-row">
+                                <h4>Mazda (2) - Harare </h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="uploads"style="width: 60%;">
+                    <div class="container" style="margin-bottom: 11%; margin-top: 5%; padding-bottom: 0; display: flex;">
+                        <select class="ui dropdown">
+                            <option value="">Sort dropdown filters </option>
+                            <option value="1">Sort by dropdown</option>
+                            <option value="0">Time period dropdown</option>
+                            <option value="0">New cars, Used Cars Radio Buttons</option>
+                          </select>
+                          <select class="ui dropdown">
+                            <option value="">Time Period dropdown filters </option>
+                            <option value="1">Sort by dropdown</option>
+                            <option value="0">Time period dropdown</option>
+                            <option value="0">New cars, Used Cars Radio Buttons</option>
+                          </select>
+                          <select class="ui dropdown">
+                            <option value="">New Cars Button </option>
+                            <option value="1">Sort by dropdown</option>
+                            <option value="0">Time period dropdown</option>
+                            <option value="0">New cars, Used Cars Radio Buttons</option>
+                          </select>
+                          <select class="ui dropdown">
+                            <option value="">Used Cars Btn Filters </option>
+                            <option value="1">Sort by dropdown</option>
+                            <option value="0">Time period dropdown</option>
+                            <option value="0">New cars, Used Cars Radio Buttons</option>
+                          </select>
+                    </div>
+
+                    <div class="timeline" style="margin-top: -10%; padding-top: 0;">
+                        <div class="view view-post-container cards "style = "padding-left:3.5%; padding-right:0%;">
+
+                            <div class="row">
+                                <div class="card " style = "width:30%;">
+                                    <img src="img/faq2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Car Make and Model</h5>
+                                    <p class="card-text">Some short description</p>
+                                    <a href="#" class="btn btn-primary">Price as to Mileage</a>
+                                    </div>
+                                </div>
+                                <div class="card " style = "width:30%;">
+                                                                    <img src="img/faq2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Car Make and Model</h5>
+                                    <p class="card-text">Some short description</p>
+                                    <a href="#" class="btn btn-primary">Explore more</a>
+                                    </div>
+                                </div>
+                                <div class="card " style = "width:30%;">
+                                                                    <img src="img/faq2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Car Make and Model</h5>
+                                    <p class="card-text">Some short description</p>
+                                    <a href="#" class="btn btn-primary">Explore more</a>
+                                    </div>
+                                </div>     
+                                <div class="card " style = "width:30%;">
+                                                                    <img src="img/faq2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Car Make and Model</h5>
+                                    <p class="card-text">Some short description</p>
+                                    <a href="#" class="btn btn-primary">Explore more</a>
+                                    </div>
+                                </div>
+                                <div class="card " style = "width:30%;">
+                                                                    <img src="img/faq2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Car Make and Model</h5>
+                                    <p class="card-text">Some short description</p>
+                                    <a href="#" class="btn btn-primary">Explore more</a>
+                                    </div>
+                                </div>
+                                <div class="card " style = "width:30%;">
+                                                                    <img src="img/faq2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Car Make and Model</h5>
+                                    <p class="card-text">Some short description</p>
+                                    <a href="#" class="btn btn-primary">Explore more</a>
+                                    </div>
+                                </div>   
+                                <div class="card " style = "width:30%;">
+                                                                    <img src="img/faq2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Car Make and Model</h5>
+                                    <p class="card-text">Some short description</p>
+                                    <a href="#" class="btn btn-primary">Explore more</a>
+                                    </div>
+                                </div>
+                                <div class="card " style = "width:30%;">
+                                                                    <img src="img/faq2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Car Make and Model</h5>
+                                    <p class="card-text">Some short description</p>
+                                    <a href="#" class="btn btn-primary" style="text-align: center;">Explore more</a>
+                                    </div>
+                                </div>
+                                <div class="card " style = "width:30%;">
+                                    <div class="view-post">
+                                        <div class="upper">
+                                            <div class="d-flex">
+                                                <div class="info">
+                                                    <h6 class="name">
+                                                        Car Description make, model, year
+                                                    </h6>
+                                                </div>
+                                            </div>
+        
+                                            <div class="dots">
+                                                <div class="info">
+                                                    <h6 class="name">
+                                                        Dealer name
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-img">
+                                            <img src="img/backypro.jpg" alt="">
+                                        </div>
+                                        <div class="car-details">
+                                            <div class="detail">
+                                                <span>
+                                                    manual or auto
+                                                </span>
+                                            </div>
+                                            <div class="detail">
+                                                <span>
+                                                    milage
+                                                </span>
+                                            </div>
+                                            <div class="detail">
+                                                <span>
+                                                    price
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                                                                                              
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--other cars you may like-->
+                    <div class="view cars ">
+                        <div class="upper">
+                            <h6 style="color:white; text-align:center; padding: 0%; margin-left:38%;">You may also like</h6>
+                        </div>
+                        <div class="owl-carousel owl-theme autocars">
+                            <div class="item">
+                                <div class="vehicle-img">
+                                    <img src="img/backypro.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h4>
+                                        mazda 263
+                                    </h4>
+                                    <button>
+                                        Explore
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>                         
+                </div>
+
+                <!--division 2 -events and chat- -->
+                <div class="division division-2" style="width: 20%;" >
+
+                    <div class="second-col first-col" style="margin-top: 3%;">
+                        <div class="menu-item" style="margin-bottom: 7%;">
+                            <div class="upper">
+                                <h6>Cars For sale by town</h6>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-row">
+                                1 table styled with each row representing town and then number of cars in ()
+                                <h4>Name : Mazwi Locomotives</h4>
+                                <h4>Location: Workington</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-col">
+                        <div class="menu-item">
+                            <div class="upper">
+                                <h6>Cars for sale by Country</h6>
+                                1 Column table for that
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="wrapper">
+
+                <div class="division">
+                    <div class="first-col">
+                        <div class="menu-item">
+                            <div class="upper">
+                                <h6>Selected Car Details</h6>
+                                1 Column table with rows of year, make, <br>
+                                mileage, engine capacity, <br>
+                                fuel type, engine type, transmission type,  <br>
+                                aircon, steering, <br>
+                                other features like windows,  <br>
+                                interior, airbags, alarm, abs, radio, <br>
+                                gps, etc
+                            </div>
+                        </div> 
+                        <div class="menu-item">
+                            <div class="item-row">
+                                <h4>Toyota (5) </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-col">
+                        <div class="menu-item">
+                            <div class="upper">
+                                <h6>Browsing History</h6>
+                            </div>
+                        </div> 
+                        <div class="menu-item">
+                            <div class="item-row">
+                                <h4>Mazda (2) - Harare </h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="uploads">
+                    
+                    <div class="timeline">
+                        <!--post container-->
+                        <div class="view view-post-container ">
+                            <div class="view-post">
+                                <div class="upper">
+                                    <div class="d-flex">
+                                        <div class="info">
+                                            <h6 class="name">
+                                                Car Description make, model, year
+                                            </h6>
+                                        </div>
+                                    </div>
+
+                                    <div class="dots">
+                                        <div class="info">
+                                            <h6 class="name">
+                                                Dealer name
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-img">
+                                    <img src="img/backypro.jpg" alt="">
+                                </div>
+                                <div class="car-details">
+                                    <div class="detail">
+                                        <span>
+                                            manual or auto
+                                        </span>
+                                    </div>
+                                    <div class="detail">
+                                        <span>
+                                            milage
+                                        </span>
+                                    </div>
+                                    <div class="detail">
+                                        <span>
+                                            price
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="view view-post-container cards "style = "padding-left:5%; padding-right:0%;">
+                            <div class="row">
+                                <div class="card" style = "width:30%;">
+                                    <div class="card-img">
+                                        <img src="img/faq2.png"class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card" style = "width:30%; ">
+                                    <div class="card-img">
+                                                                                <img src="img/faq2.png"class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card" style = "width:30%; ">
+                                    <div class="card-img">
+                                                                                <img src="img/faq2.png"class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!--division 2 -events and chat- -->
+                <div class="division division-2">
+                    <div class="second-col first-col">
+                        <div class="menu-item">
+                            <div class="upper">
+                                <h6>Auto dealer Information</h6>
+                                Logo, Name, Location, Link to googlemaps,  <br>contact numbers, fb, tw, wa btns
+                                <br> 2 Bottom Buttons for <br> Enquiry and Finance Calculator
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-row">
+                                <h4>Name : Mazwi Locomotives</h4>
+                                <h4>Location: Workington</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-col">
+                        <div class="menu-item">
+                            <div class="upper">
+                                <h6>Similar used cars for sale</h6>
+                                Tabbed table as to All~Year~Engine~Mileage~Price
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="myform" style="width: 80%; border-radius: 2%;">
+                <form method="post" detail="buy.php" style="width: 100%;  padding: 5%;">
+                    <div class="title-section margin-bottom-50">
+                        <h2 class="title" style="text-align:center; margin-top:20px; margin-bottom: 20px;">Couldnt find what you were looking for; <br>
+                            Input the details of the car you want below</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="make">Car Make</label>
+                            <input type="text" id="make" name="make" placeholder="Your prefferred car model..">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="model">Car Model</label>
+                            <input type="text" id="model" name="model" placeholder="Your prefferred car model ..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="year">Year</label>
+                            <input type="text" id="year" name="year" placeholder="Year of manufacture and/or release..">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="enail">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Email Address..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="color">Car Color</label>
+                            <input type="text" id="color" name="color" placeholder="Any prefferred color..">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="label-control">Milage</label>
+                            <input type="text" class="form-control" name="milage">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="details">Any Other Details</label>
+                            <textarea id="other" name="other" placeholder="Any other specifications.." style="height:100px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" name="submit" value="Submit" style="width: 200px; margin-top: 2%; margin-left: 43%;">
+                    </div>
+                </form>       
+            </div>
+        
+            <script src="jquery.min.js"></script>
+            <script src="owl.carousel.min.js"></script>
+            <script src="index.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('#manyoptions').multiselect();
+                });
+            </script>
+
+        </body>
+
+        <!-- Start Footer -->
+        <section class="footer">
+            <p class="copyright" style="color: black; background-color: rgb(253,206,11);">Copyright &copy; 2022 | Designed By <span>Roy Nyaumwe</span></p>
+        </section>
+    </body>
+</html>
