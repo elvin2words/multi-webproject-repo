@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env 
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Environment files
+.env
+
